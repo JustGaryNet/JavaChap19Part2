@@ -1,0 +1,54 @@
+package ivey19;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Part2 {
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> integers = new ArrayList<>();
+		integers.add(13);
+		integers.add(69);
+		integers.add(15);
+		integers.add(53);
+		integers.add(45);
+		
+		ArrayList<Double> doubles = new ArrayList<>();
+		doubles.add(3.2);
+		doubles.add(4.5);
+		doubles.add(9.6);
+		doubles.add(6.9);
+		doubles.add(1.1);
+		doubles.add(13.3);
+		
+		ArrayList<Byte> bytes = new ArrayList<>();
+		bytes.add((byte) 12);
+		bytes.add((byte) 20);
+		bytes.add((byte) 4);
+		bytes.add((byte) 7);
+		
+		
+		listAdder(integers);
+		listAdder(doubles);
+		listAdder(bytes);
+		
+	}
+	
+	public static double listAdder(ArrayList<? extends Number> list) {
+		double sum = 0;
+		for (int i = 0; i <= list.size(); i++)  
+		sum += i ;
+		System.out.println(listAdder);
+			//System.out.print(list.get(i) + " ");
+		System.out.println(list.toString().replace("[", "").replace("]", "").replace(",", " "));
+		//System.out.println(sum);
+		return 0.0;
+		
+	
+	}
+
+
+
+}
